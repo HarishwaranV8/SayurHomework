@@ -1,9 +1,9 @@
 str = 'hello world'
-wordlist = str.split(' ')
-strlist = []
-for i in wordlist:
+wordlist1 = str.split(' ')
+strlist1 = []
+for i in wordlist1:
     for j in i:
-        strlist.append(j)
-    for i in range(len(strlist)):
-        print(strlist.pop(),end='')
+        strlist1.append(j)
+    for i in range(len(strlist1)):
+        print(strlist1.pop(),end='')
     print(end=' ')

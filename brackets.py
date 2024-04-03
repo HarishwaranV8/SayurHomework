@@ -1,13 +1,13 @@
 brackets = {'(':')','[':']','{':'}'}
-checklist = []
+checklist1 = []
 def check_bracket_balance(string):
     for i in string:
         if i in brackets:
-            checklist.append(i)
+            checklist1.append(i)
         elif i in brackets.values():
-            if i == brackets[checklist[-1]]:
-                checklist.pop()
-    if checklist:
+            if i == brackets[checklist1[-1]]:
+                checklist1.pop()
+    if checklist1:
         return 0
     else:
         return 1

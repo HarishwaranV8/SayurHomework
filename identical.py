@@ -9,9 +9,9 @@
 #                     identical_pairs += 1
 #     return identical_pairs
 
-# # Input list
-input_list = ['good', 'god', 'yarn', 'abc', 'caab']
-# identical_pairs_count = count_identical_pairs(input_list)
+# # Input list1
+input_list1 = ['good', 'god', 'yarn', 'abc', 'caab']
+# identical_pairs_count = count_identical_pairs(input_list1)
 # print("Number of identical pairs:", identical_pairs_count)
 
 def check_identical(word1,word2) -> str:
@@ -22,9 +22,9 @@ def check_identical(word1,word2) -> str:
     return flag
 
 identical_pairs = 0
-for i in range(len(input_list)):
-    for j in range(len(input_list)):
-        if i < j and check_identical(input_list[i],input_list[j]):
+for i in range(len(input_list1)):
+    for j in range(len(input_list1)):
+        if i < j and check_identical(input_list1[i],input_list1[j]):
             identical_pairs += 1
 
 print(identical_pairs)
